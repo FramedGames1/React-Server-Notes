@@ -1,0 +1,17 @@
+Server Setup Notes
+
+Create server folder 
+Create server.js
+
+setup package.json-------
+npm init -y 
+install express--------
+npm i express
+
+
+
+*console.log in server only shows in the terminal and 
+is not available via inspect console in the browser *
+
+
+
