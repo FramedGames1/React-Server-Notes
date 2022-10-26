@@ -54,20 +54,20 @@ app.use(express.urlencoded({extended:true}))`
 
 //app.get takes in 2 parameters a path and what to do with the path
 
- `app.get('/user',(req,res)=>{
+    app.get('/user',(req,res)=>{
     const user = createUser()
     res.json(user)
- })
+    })
 
 
- app.get('/user/:word',(req,res)=>{
+    app.get('/user/:word',(req,res)=>{
     const word = req.params.word
     res.json(word)
- })
+    })
 
- app.post('/addUser',(req,res) => {
+    app.post('/addUser',(req,res) => {
     //from post man we can console the request
     console.log(req.body)
     //and working backwards we can display the result as the request.body
     res.json(req.body)
- })`
+    })
